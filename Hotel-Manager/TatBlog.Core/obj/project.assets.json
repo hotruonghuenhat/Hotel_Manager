@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SunnyGold\\Downloads\\TipsAndTricks\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
+      "projectUniqueName": "E:\\Hotel_Manager\\Hotel-Manager\\TatBlog.Core\\TatBlog.Core.csproj",
       "projectName": "TatBlog.Core",
-      "projectPath": "C:\\Users\\SunnyGold\\Downloads\\TipsAndTricks\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj",
+      "projectPath": "E:\\Hotel_Manager\\Hotel-Manager\\TatBlog.Core\\TatBlog.Core.csproj",
       "packagesPath": "C:\\Users\\SunnyGold\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SunnyGold\\Downloads\\TipsAndTricks\\TipsAndTricks\\TatBlog.Core\\obj\\",
+      "outputPath": "E:\\Hotel_Manager\\Hotel-Manager\\TatBlog.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SunnyGold\\AppData\\Roaming\\NuGet\\NuGet.Config",

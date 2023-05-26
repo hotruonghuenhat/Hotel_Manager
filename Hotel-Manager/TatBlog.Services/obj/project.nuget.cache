@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "R45w/4ErYpFj6nJ4P85J47fXDQJv+YPYGygI3RD/GNNSxUASCX/Xam1aUfISeDrktU570JhZj8NJrHbc+RgZ8Q==",
+  "dgSpecHash": "FgMIc5mAdFl4i4wIJtgGxlijLu2A62mhpvrmMd4OQr8x9wdc08CyE0lk7AIlhcgD0VJ6MFGAV0Ga7gyawrunmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SunnyGold\\Downloads\\TipsAndTricks\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj",
+  "projectFilePath": "E:\\Hotel_Manager\\Hotel-Manager\\TatBlog.Services\\TatBlog.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SunnyGold\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\SunnyGold\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

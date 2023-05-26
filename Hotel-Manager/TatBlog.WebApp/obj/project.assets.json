@@ -10862,11 +10862,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SunnyGold\\Downloads\\TipsAndTricks\\TipsAndTricks\\TatBlog.WebApp\\TatBlog.WebApp.csproj",
+      "projectUniqueName": "E:\\Hotel_Manager\\Hotel-Manager\\TatBlog.WebApp\\TatBlog.WebApp.csproj",
       "projectName": "TatBlog.WebApp",
-      "projectPath": "C:\\Users\\SunnyGold\\Downloads\\TipsAndTricks\\TipsAndTricks\\TatBlog.WebApp\\TatBlog.WebApp.csproj",
+      "projectPath": "E:\\Hotel_Manager\\Hotel-Manager\\TatBlog.WebApp\\TatBlog.WebApp.csproj",
       "packagesPath": "C:\\Users\\SunnyGold\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SunnyGold\\Downloads\\TipsAndTricks\\TipsAndTricks\\TatBlog.WebApp\\obj\\",
+      "outputPath": "E:\\Hotel_Manager\\Hotel-Manager\\TatBlog.WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SunnyGold\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10883,14 +10883,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\SunnyGold\\Downloads\\TipsAndTricks\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj": {
-              "projectPath": "C:\\Users\\SunnyGold\\Downloads\\TipsAndTricks\\TipsAndTricks\\TatBlog.Core\\TatBlog.Core.csproj"
+            "E:\\Hotel_Manager\\Hotel-Manager\\TatBlog.Core\\TatBlog.Core.csproj": {
+              "projectPath": "E:\\Hotel_Manager\\Hotel-Manager\\TatBlog.Core\\TatBlog.Core.csproj"
             },
-            "C:\\Users\\SunnyGold\\Downloads\\TipsAndTricks\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj": {
-              "projectPath": "C:\\Users\\SunnyGold\\Downloads\\TipsAndTricks\\TipsAndTricks\\TatBlog.Data\\TatBlog.Data.csproj"
+            "E:\\Hotel_Manager\\Hotel-Manager\\TatBlog.Data\\TatBlog.Data.csproj": {
+              "projectPath": "E:\\Hotel_Manager\\Hotel-Manager\\TatBlog.Data\\TatBlog.Data.csproj"
             },
-            "C:\\Users\\SunnyGold\\Downloads\\TipsAndTricks\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj": {
-              "projectPath": "C:\\Users\\SunnyGold\\Downloads\\TipsAndTricks\\TipsAndTricks\\TatBlog.Services\\TatBlog.Services.csproj"
+            "E:\\Hotel_Manager\\Hotel-Manager\\TatBlog.Services\\TatBlog.Services.csproj": {
+              "projectPath": "E:\\Hotel_Manager\\Hotel-Manager\\TatBlog.Services\\TatBlog.Services.csproj"
             }
           }
         }

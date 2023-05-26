@@ -11,12 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TatBlog.Core\Hotel-Manager.Core.csproj" />
-    <ProjectReference Include="..\TatBlog.Data\Hotel-Manager.Data.csproj" />
-    <ProjectReference Include="..\TatBlog.Services\Hotel-Manager.Services.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="wwwroot\templates\emails\" />
     <Folder Include="wwwroot\lib\" />
@@ -39,6 +33,12 @@
     <PackageReference Include="NLog" Version="5.1.2" />
     <PackageReference Include="NLog.Extensions.Logging" Version="5.2.2" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="5.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hotel-Manager.Core\Hotel-Manager.Core.csproj" />
+    <ProjectReference Include="..\Hotel-Manager.Data\Hotel-Manager.Data.csproj" />
+    <ProjectReference Include="..\Hotel-Manager.Services\Hotel-Manager.Services.csproj" />
   </ItemGroup>
 
 </Project>

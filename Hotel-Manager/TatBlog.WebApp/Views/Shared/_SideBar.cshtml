@@ -1,0 +1,8 @@
+﻿<div class="p-4">
+    <partial name="_SearchForm" />
+
+    @await Component.InvokeAsync("TagsWidget")
+    @await Component.InvokeAsync("CategoriesWidget")
+    @await Component.InvokeAsync("Top3PostWidget")
+    @await Component.InvokeAsync("Top5PostsWidget")
+</div>

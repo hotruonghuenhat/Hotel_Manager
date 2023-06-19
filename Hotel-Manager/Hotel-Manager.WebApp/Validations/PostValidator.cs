@@ -10,8 +10,8 @@ namespace TatBlog.WebApp.Validations {
             _blogRepo = blogRepo;
 
             RuleFor(post => post.Title)
-                .NotEmpty().WithMessage("Chủ đề không được bỏ trống")
-                .MaximumLength(500).WithMessage("Chủ đề không được nhiều hơn 500 ký tự");
+                .NotEmpty().WithMessage("Loại không được bỏ trống")
+                .MaximumLength(500).WithMessage("Loại không được nhiều hơn 500 ký tự");
 
             RuleFor(p => p.ShortDescription)
                 .NotEmpty()
@@ -40,11 +40,11 @@ namespace TatBlog.WebApp.Validations {
 
             RuleFor(p => p.CategoryId)
                 .NotEmpty()
-                .WithMessage("Bạn phải chọn chủ đề cho bài viết");
+                .WithMessage("Bạn phải chọn Loại cho Khách Sạn");
 
             RuleFor(p => p.AuthorId)
                 .NotEmpty()
-                .WithMessage("Bạn phải chọn tác giả bài viết");
+                .WithMessage("Bạn phải chọn Chủ Khách Sạn Khách Sạn");
 
             RuleFor(p => p.SelectedTags)
                 .Must(HasAtLeastOneTag)
@@ -53,11 +53,11 @@ namespace TatBlog.WebApp.Validations {
             When(p => p.Id <= 0, () => {
                 RuleFor(p => p.ImageFile)
                     .Must(p => p is { Length: > 0 })
-                    .WithMessage("Bạn phải chọn hình ảnh cho bài viết");
+                    .WithMessage("Bạn phải chọn hình ảnh cho Khách Sạn");
             }).Otherwise(() => {
                 RuleFor(p => p.ImageFile)
                     .MustAsync(SetImageIfNotExist)
-                    .WithMessage("Bạn phải chọn hình ảnh cho bài viết");
+                    .WithMessage("Bạn phải chọn hình ảnh cho Khách Sạn");
             });
         }
 

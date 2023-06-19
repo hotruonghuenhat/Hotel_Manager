@@ -2,15 +2,15 @@
 
 namespace TatBlog.Core.Entities;
 
-// Biểu diễn một bài viết của blog
+// Biểu diễn một Khách Sạn của blog
 public class Post : IEntity {
-    // Mã bài viết
+    // Mã Khách Sạn
     public int Id { get; set; }
-    // Tiêu đề bài viết
+    // Tiêu đề Khách Sạn
     public string Title { get; set; }
     // Mô tả hay giới thiệu ngắn về nội dung
     public string ShortDescription { get; set; }
-    // Nội dung chi tiết của bài viết 
+    // Nội dung chi tiết của Khách Sạn 
     public string Description { get; set; }
     // Metadata
     public string Meta { get; set; }
@@ -18,9 +18,9 @@ public class Post : IEntity {
     public string UrlSlug { get; set; }
     // Đường dẫn đến tập tin hình 
     public string ImageUrl { get; set; }
-    // Số lượt xem, đọc bài viết 
+    // Số lượt xem, đọc Khách Sạn 
     public int ViewCount { get; set; }
-    // Trạng thái của bài viết 
+    // Trạng thái của Khách Sạn 
     public bool Published { get; set; }
     // Ngày giờ đăng bài
     public DateTime PostedDate { get; set; }
@@ -28,12 +28,12 @@ public class Post : IEntity {
     public DateTime? ModifiedDate { get; set; }
     // Mã chuyên mục
     public int CategoryId { get; set; }
-    // Mã tác giả của bài viết
+    // Mã Chủ Khách Sạn của Khách Sạn
     public int AuthorId { get; set; }
-    // Chuyên mục của bài viết 
+    // Chuyên mục của Khách Sạn 
     public Category Category { get; set; }
-    // Tác giả của bài viết
+    // Chủ Khách Sạn của Khách Sạn
     public Author Author { get; set; }
-    // Danh sách các từ khóa của bài viết 
+    // Danh sách các từ khóa của Khách Sạn 
     public IList<Tag> Tags { get; set; }
 }

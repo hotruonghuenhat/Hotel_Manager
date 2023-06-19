@@ -14,7 +14,7 @@ public class BlogRepository : IBlogRepository {
     public BlogRepository(BlogDbContext context) {
         _context = context;
     }
-    //tìm bài viết có lượt xem nhiều, phố biến
+    //tìm Khách Sạn có lượt xem nhiều, phố biến
     public async Task<IList<Post>> GetPopularArticleAsync(int numPosts, CancellationToken cancellationToken = default) {
         return await _context.Set<Post>()
             .Include(x => x.Author)
@@ -104,8 +104,8 @@ public class BlogRepository : IBlogRepository {
         return await authors.ToListAsync(cancellationToken);
     }
 
-    // Lấy danh sách chuyên mục và số lượng bài viết 
-    // nằm thuộc từng chuyên mục/chủ đề
+    // Lấy danh sách chuyên mục và số lượng Khách Sạn 
+    // nằm thuộc từng chuyên mục/Loại
     public async Task<IList<CategoryItem>> GetCategoriesAsync(bool showOnMenu = false, CancellationToken cancellationToken = default) {
         IQueryable<Category> categories = _context.Set<Category>();
 

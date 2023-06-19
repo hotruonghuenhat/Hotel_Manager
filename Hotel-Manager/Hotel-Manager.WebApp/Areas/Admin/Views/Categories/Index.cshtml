@@ -1,10 +1,10 @@
 ﻿@model TatBlog.WebApp.Areas.Admin.Models.CategoryFilterModel
 @{
-    ViewData["PageTitle"] = "Chủ đề";
+    ViewData["PageTitle"] = "Loại";
     var categories = ViewBag.categories;
 }
 
-<h1>Danh sách chủ đề</h1>
+<h1>Danh sách Loại</h1>
 
 <partial name="_CategoriesPane" model="Model" />
 
@@ -12,7 +12,7 @@
     <table class="table table-bordered table-responsive table-striped mt-4">
         <thead >
             <tr>
-                <th>Chủ đề</th>
+                <th>Loại</th>
                 <th>Mô tả</th>
                 <th>Hiển thị</th>
                 <th width="10%">Action</th>
@@ -55,11 +55,11 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="deleteModalLabel">Xóa bài viết</h5>
+                <h5 class="modal-title" id="deleteModalLabel">Xóa Khách Sạn</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>Bạn có chắc chắn muốn xoá chủ đề này?</p>
+                <p>Bạn có chắc chắn muốn xoá Loại này?</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>

@@ -1,11 +1,11 @@
 ﻿@model TatBlog.WebApp.Areas.Admin.Models.PostFilterModel
 @{
-    ViewData["PageTitle"] = "Danh sách bài viết";
+    ViewData["PageTitle"] = "Danh sách Khách Sạn";
 
     var postsList = ViewBag.PostsList as IPagedList<Post>;
 }
 
-<h1>Danh sách bài viết</h1>
+<h1>Danh sách Khách Sạn</h1>
 
 <partial name="_PostFilterPane" model="Model" />
 
@@ -14,8 +14,8 @@
             <thead>
                 <tr>
                     <th width="50%">Tiêu đề</th>
-                    <th width="20%">Tác giả</th>
-                    <th width="10%">Chủ đề</th>
+                    <th width="20%">Chủ Khách Sạn</th>
+                    <th width="10%">Loại</th>
                     <th width="10%">Xuất bản</th>
                     <th width="10%"></th>
                 </tr>
@@ -57,7 +57,7 @@
         <partial name="_Pager" model="@postsList" />
 }
 else {
-        <h1 class="text-danger">Không tìm thấy bài viết nào</h1>
+        <h1 class="text-danger">Không tìm thấy Khách Sạn nào</h1>
 }
 
 <!-- Modal -->
@@ -65,11 +65,11 @@ else {
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="deleteModalLabel">Xóa bài viết</h5>
+                <h5 class="modal-title" id="deleteModalLabel">Xóa Khách Sạn</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p>Bạn có chắc chắn muốn xóa bài viết này?</p>
+                <p>Bạn có chắc chắn muốn xóa Khách Sạn này?</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>

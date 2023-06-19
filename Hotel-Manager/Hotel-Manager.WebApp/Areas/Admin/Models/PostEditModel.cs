@@ -8,7 +8,7 @@ namespace TatBlog.WebApp.Areas.Admin.Models;
 public class PostEditModel {
     public int Id { get; set; }
 
-    [DisplayName("Tiêu đề")]
+    [DisplayName("Tên Khách Sạn")]
     [Required(ErrorMessage = "Tiêu đề không được để trống")]
     [MaxLength(500, ErrorMessage = "Tiêu đề tối đa 500 ký tự")]
     public string Title { get; set; }
@@ -21,7 +21,7 @@ public class PostEditModel {
     [Required(ErrorMessage = "Nội dung không được để trống")]
     [MaxLength(5000, ErrorMessage = "Nội dung tối đa 5000 ký tự")]
     public string Description { get; set; }
-    [DisplayName("Metadata")]
+    [DisplayName("Địa chỉ")]
     [Required(ErrorMessage = "Metadata không được để trống")]
     [MaxLength(1000, ErrorMessage = "Metadata tối đa 1000 ký tự")]
     public string Meta { get; set; }
@@ -42,12 +42,12 @@ public class PostEditModel {
     [DisplayName("Xuất bản ngay")]
     public bool Published { get; set; }
 
-    [DisplayName("Chủ đề")]
-    [Required(ErrorMessage = "Bạn chưa chọn chủ đề")]
+    [DisplayName("Loại")]
+    [Required(ErrorMessage = "Bạn chưa chọn Loại")]
     public int CategoryId { get; set; }
 
-    [DisplayName("Tác giả")]
-    [Required(ErrorMessage = "Bạn chưa chọn tác giả")]
+    [DisplayName("Chủ Khách Sạn")]
+    [Required(ErrorMessage = "Bạn chưa chọn Chủ Khách Sạn")]
     public int AuthorId { get; set; }
 
     [DisplayName("Từ khóa (mỗi từ 1 dòng)")]

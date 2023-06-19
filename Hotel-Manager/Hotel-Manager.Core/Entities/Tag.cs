@@ -1,7 +1,7 @@
 ﻿using TatBlog.Core.Contracts;
 
 namespace TatBlog.Core.Entities;
-// Biểu diễn một từ khóa trong bài viết 
+// Biểu diễn một từ khóa trong Khách Sạn 
 public class Tag : IEntity {
     // Mã từ khóa
     public int Id { get; set; }
@@ -11,6 +11,6 @@ public class Tag : IEntity {
     public string UrlSlug { get; set; }
     // Mô tả thêm về từ khóa
     public string Description { get; set; }
-    // Danh sách bài viết có chứa từ khóa 
+    // Danh sách Khách Sạn có chứa từ khóa 
     public IList<Post> Posts { get; set; }
 }

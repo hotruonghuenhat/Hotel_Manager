@@ -12,7 +12,7 @@ namespace TatBlog.WebApp.Controllers {
         }
 
         //Action này xử lý Htttp request đến trang chủ của
-        //ứng dụng web hoặc tìm kiếm bài viết theo từ khóa
+        //ứng dụng web hoặc tìm kiếm Khách Sạn theo từ khóa
         public async Task<IActionResult> Index(
             [FromQuery(Name = "k")] string keyword = null,
             [FromQuery(Name = "p")] int pageNumber = 1,
@@ -20,20 +20,20 @@ namespace TatBlog.WebApp.Controllers {
 
             //tạo đối tượng chứa các điều kiện truy vấn
             var postQuery = new PostQuery() {
-                //chỉ lấy những bài viết có trạng thái Published
+                //chỉ lấy những Khách Sạn có trạng thái Published
                 PublishedOnly = true,
-                //tìm bài viết theo từ khóa
+                //tìm Khách Sạn theo từ khóa
                 KeyWord = keyword,
             };
 
-            //Truy vấn các bài viết theo điều kiện đã tạo
+            //Truy vấn các Khách Sạn theo điều kiện đã tạo
             var postsList = await _blogRepository
                 .GetPagedPostsAsync(postQuery, pageNumber, pageSize);
 
             //Lưu lại điều kiện truy vấn để hiển thị trong View
             ViewBag.PostQuery = postQuery;
 
-            // Truyền danh sách bài viết vào View để render ra HTML
+            // Truyền danh sách Khách Sạn vào View để render ra HTML
             return View(postsList);
         }
 

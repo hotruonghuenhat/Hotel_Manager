@@ -36,7 +36,7 @@ public class PostsController : Controller {
 
         var postQuery = _mapper.Map<PostQuery>(model);
 
-        _logger.LogInformation("Lấy danh sách bài viết từ CSDL");
+        _logger.LogInformation("Lấy danh sách Khách Sạn từ CSDL");
 
         ViewBag.PostsList = await _blogRepository.GetPagedPostsAsync(postQuery, pageNumber, 10);
 
@@ -77,11 +77,11 @@ public class PostsController : Controller {
 
     [HttpGet]
     public async Task<IActionResult> Edit(int id = 0) {
-        // ID = 0 => Thêm bài viết mới
-        // ID > 0 => Cập nhật bài viết
+        // ID = 0 => Thêm Khách Sạn mới
+        // ID > 0 => Cập nhật Khách Sạn
         var post = id > 0 ? await _blogRepository.GetPostByIdAsync(id, true) : null;
 
-        // tạo view model từ dữ liệu của bài viết
+        // tạo view model từ dữ liệu của Khách Sạn
         var model = post == null ? new PostEditModel() : _mapper.Map<PostEditModel>(post);
 
         // gán giá trị khác cho view model
@@ -118,7 +118,7 @@ public class PostsController : Controller {
             post.ModifiedDate = DateTime.Now;
         }
 
-        // Nếu người dùng có upload hình ảnh minh họa cho bài viết
+        // Nếu người dùng có upload hình ảnh minh họa cho Khách Sạn
         if (model.ImageFile?.Length > 0) {
             // Thì thực hiện lưu vào thư mục uploads
             var newImagePath = await _mediaManager.SaveFileAsync(model.ImageFile.OpenReadStream(), model.ImageFile.FileName, model.ImageFile.ContentType);

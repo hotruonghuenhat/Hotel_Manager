@@ -8,10 +8,10 @@ public class PostFilterModel {
     [DisplayName("Từ khoá")]
     public string Keyword { get; set; }
 
-    [DisplayName("Tác giả")]
+    [DisplayName("Chủ Khách Sạn")]
     public int? AuthorId { get; set; }
 
-    [DisplayName("Chủ đề")]
+    [DisplayName("Loại")]
     public int? CategoryId { get; set; }
 
     [DisplayName("Năm")]

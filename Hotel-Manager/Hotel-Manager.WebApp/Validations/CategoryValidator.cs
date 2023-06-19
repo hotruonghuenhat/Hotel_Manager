@@ -10,8 +10,8 @@ namespace TatBlog.WebApp.Validations {
             _blogRepo = blogRepo;
 
             RuleFor(s => s.Name)
-                .NotEmpty().WithMessage("Tên chủ đề không được bỏ trống")
-                .MaximumLength(500).WithMessage("Tên chủ đề không được nhiều hơn 500 ký tự");
+                .NotEmpty().WithMessage("Tên Loại không được bỏ trống")
+                .MaximumLength(500).WithMessage("Tên Loại không được nhiều hơn 500 ký tự");
 
             RuleFor(s => s.Description)
                 .NotEmpty()

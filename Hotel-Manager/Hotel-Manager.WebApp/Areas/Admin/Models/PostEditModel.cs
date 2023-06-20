@@ -13,17 +13,17 @@ public class PostEditModel {
     [MaxLength(500, ErrorMessage = "Tiêu đề tối đa 500 ký tự")]
     public string Title { get; set; }
 
-    [DisplayName("Giới thiệu")]
+    [DisplayName("Địa chỉ")]
     [Required(ErrorMessage = "Giới thiệu không được để trống")]
     [MaxLength(2000, ErrorMessage = "Giới thiệu tối đa 2000 ký tự")]
     public string ShortDescription { get; set; }
-    [DisplayName("Nội dung")]
+    [DisplayName("Nội dung ngắn")]
     [Required(ErrorMessage = "Nội dung không được để trống")]
     [MaxLength(5000, ErrorMessage = "Nội dung tối đa 5000 ký tự")]
     public string Description { get; set; }
-    [DisplayName("Địa chỉ")]
+    [DisplayName("Nội dung")]
     [Required(ErrorMessage = "Metadata không được để trống")]
-    [MaxLength(1000, ErrorMessage = "Metadata tối đa 1000 ký tự")]
+    [MaxLength(5000, ErrorMessage = "Metadata tối đa 1000 ký tự")]
     public string Meta { get; set; }
 
     [DisplayName("Slug")]

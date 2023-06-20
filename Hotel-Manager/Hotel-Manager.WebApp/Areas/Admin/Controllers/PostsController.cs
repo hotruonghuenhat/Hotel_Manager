@@ -30,7 +30,7 @@ public class PostsController : Controller {
     public async Task<IActionResult> Index(PostFilterModel model,
         [FromQuery(Name = "k")] string keyword = null,
         [FromQuery(Name = "p")] int pageNumber = 1,
-        [FromQuery(Name = "ps")] int pageSize = 10) {
+        [FromQuery(Name = "ps")] int pageSize = 5) {
 
         _logger.LogInformation("Tạo điều kiện truy vấn");
 
